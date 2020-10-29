@@ -45,10 +45,10 @@ int main(){
       mat_start = clock();
       pthread_t mat_thread[3], thread_COUNT;
 
-      pthread_create(&mat_thread[0], NULL, productSum, (void *), no1);
-      pthread_create(&mat_thread[1], NULL, productSum, (void *), no2);
-      pthread_create(&mat_thread[2], NULL, productSum, (void *), no3);
-      pthread_create(&thread_COUNT, NULL, productSum, (void *), no4);
+      pthread_create(&mat_thread[0], NULL, productSum, (void *) no1);
+      pthread_create(&mat_thread[1], NULL, productSum, (void *) no2);
+      pthread_create(&mat_thread[2], NULL, productSum, (void *) no3);
+      pthread_create(&thread_COUNT, NULL, productSum, (void *) no4);
 
       while (products_gone_through < PRODUCT_AMOUT){
 
@@ -64,7 +64,7 @@ int main(){
       delta_mat = ((double) (mat_end - mat_start)) / CLOCKS_PER_SEC;
 
       sum_start = clock();
-      for (index = 0; index < PRODUCT_AMOUT; i++){
+      for (index = 0; index < PRODUCT_AMOUT; index++){
             product_weights_SUM += product_weights[index];
       }
       
