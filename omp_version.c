@@ -17,7 +17,7 @@ int sensorSignal(){
       }
 }
 
-void productSum(void *arg){
+void productSum(){
       while(products_gone_through < PRODUCT_AMOUT){
             if(sensorSignal() == 1){
                   if(products_gone_through < PRODUCT_AMOUT){
