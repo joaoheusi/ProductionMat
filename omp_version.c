@@ -33,7 +33,7 @@ int main(int argc,char **argv){
 
       main_end = clock();
 
-      delta_main = ((double)) (main_end - main_start)/CLOCKS_PER_SEC;
+      delta_main = ((double) (main_end - main_start))/CLOCKS_PER_SEC;
 
 
 

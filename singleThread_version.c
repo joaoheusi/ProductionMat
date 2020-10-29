@@ -31,7 +31,7 @@ int main(){
 
       mat_end = clock();
 
-      delta_mat = ((double)) (mat_end - mat_start) / CLOCKS_PER_SEC;
+      delta_mat = ((double) (mat_end - mat_start)) / CLOCKS_PER_SEC;
 
       sum_start = clock();
 
@@ -41,12 +41,12 @@ int main(){
 
       sum_end = clock();
 
-      delta_sum = ((double)) (sum_end -sum_start)/CLOCKS_PER_SEC;
+      delta_sum = ((double) (sum_end -sum_start))/CLOCKS_PER_SEC;
       printf("Total product weight gone through: %d\n", product_weights_SUM);
 
 
       main_end = clock();
-      delta_main = ((double)) (main_end - main_start)/CLOCKS_PER_SEC;
+      delta_main = ((double) (main_end - main_start))/CLOCKS_PER_SEC;
 
       printf("#------Key Time Indicators Analysis------#");
       printf("MainExecution Time: %f\n.", delta_main);
@@ -55,7 +55,7 @@ int main(){
 
 
       return 0;            
-      
+
 }
 
 
