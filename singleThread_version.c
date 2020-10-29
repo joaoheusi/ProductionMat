@@ -9,7 +9,7 @@ int  random_number;
 
 int main(){
 
-      srant(time(NULL));
+      srand(time(NULL));
       int count1, index =0;
       int product_weights_SUM =0, products_gone_through=0, product_weights[PRODUCT_AMOUT];
 

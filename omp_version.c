@@ -9,7 +9,7 @@ int index =0, products_gone_through = 0, product_weights[PRODUCT_AMOUT], random_
 
 int sensorSignal();
 
-void productSum(void *arg);
+void productSum();
 
 int main(int argc,char **argv){
       clock_t main_start, main_end;
@@ -56,7 +56,7 @@ int sensorSignal(){
       }
 }
 
-void productSum(void *arg){
+void productSum(){
       while(products_gone_through < PRODUCT_AMOUT){
             if(sensorSignal() == 1){
                   if(products_gone_through < PRODUCT_AMOUT){
