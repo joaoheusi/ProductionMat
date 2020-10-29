@@ -40,7 +40,7 @@ int main(){
       
       srand(time(NULL));
 
-      int count1,count2,count3;
+      int count1=0,count2,count3;
       int product_weights_SUM = 0;
       productSum();
 
@@ -49,7 +49,7 @@ int main(){
       printf("Products gone Through: %d\n", products_gone_through);
       main_start = clock();
       
-      for(count1 =0;count1 <PRODUCT_AMOUT;count1++;){
+      for(count1 =0;count1 <PRODUCT_AMOUT;count1++){
             product_weights_SUM += product_weights[count1];
       }
 
