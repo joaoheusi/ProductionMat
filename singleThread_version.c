@@ -35,7 +35,7 @@ int main(){
 
       sum_start = clock();
 
-      for(index = 0, index < PRODUCT_AMOUT;index++;){
+      for(index = 0; index < PRODUCT_AMOUT;index++){
             product_weights_SUM += product_weights[index];
       }
 
