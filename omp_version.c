@@ -36,7 +36,7 @@ int main(){
       clock_t main_start, main_end;
       double delta_main;
       
-      ompt_set_num_threads(3);
+      omp_set_num_threads(3);
       
       srand(time(NULL));
 
