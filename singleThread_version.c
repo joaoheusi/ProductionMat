@@ -5,13 +5,13 @@
 #define PRODUCT_AMOUT 1400
 
 int sensorSignal();
-
+int  random_number;
 
 int main(){
 
       srant(time(NULL));
       int count1, index =0;
-      int product_weights_SUM =0, products_gone_through=0, product_weights[PRODUCT_AMOUT], random_number;
+      int product_weights_SUM =0, products_gone_through=0, product_weights[PRODUCT_AMOUT];
 
       clock_t sum_start, sum_end, mat_start, mat_end, main_start, main_end;
       double delta_sum, delta_main, delta_mat;
@@ -35,7 +35,7 @@ int main(){
 
       sum_start = clock();
 
-      for(index = 0, index < PRODUCT_AMOUT;index++){
+      for(index = 0, index < PRODUCT_AMOUT;index++;){
             product_weights_SUM += product_weights[index];
       }
 
